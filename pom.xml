@@ -1,0 +1,33 @@
+<project>
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>io.zephyr.vault</groupId>
+    <artifactId>vault-aggregator</artifactId>
+    <version>1.0.0-SNAPSHOT</version>
+    <packaging>pom</packaging>
+    <properties>
+        <zephyr.version>2.0.39.Final</zephyr.version>
+    </properties>
+
+
+    <distributionManagement>
+        <repository>
+            <id>sunshower-releases</id>
+            <url>http://artifacts.sunshower.io/repository/sunshower-releases</url>
+        </repository>
+        <snapshotRepository>
+            <id>sunshower-snapshots</id>
+            <url>http://artifacts.sunshower.io/repository/sunshower-snapshots</url>
+        </snapshotRepository>
+
+    </distributionManagement>
+    <modules>
+        <module>platform</module>
+        <module>platform/linux</module>
+        <module>platform/osx</module>
+        <module>platform/windows</module>
+
+    </modules>
+
+
+</project>
+
